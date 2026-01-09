@@ -5,6 +5,7 @@ A centralized repository for tracking all my work, projects, and learning activi
 ## Purpose
 
 This repository serves as:
+
 - **Project Portfolio**: Showcase of completed and ongoing work
 - **Work Tracker**: Organized documentation of development progress
 - **Learning Log**: Record of experiments, courses, and technical growth
@@ -12,7 +13,7 @@ This repository serves as:
 
 ## Repository Structure
 
-```
+```text
 Projects/
 ├── active/              # Currently active projects
 ├── completed/           # Finished projects
@@ -44,17 +45,20 @@ Projects/
 The `project-docs/` submodule provides Claude Code commands for maintaining documentation:
 
 **Installation** (if not already installed):
+
 ```bash
 claude plugins add teresa-torres-plugins/project-docs
 ```
 
 **Key Commands**:
+
 - `/project-docs:readme` - Update project README with setup/usage info
 - `/project-docs:architecture` - Document system design and patterns
 - `/project-docs:process-notes` - Log work history and decisions
 - `/project-docs:ab-test <name>` - Document A/B tests and experiments
 
 **When to Use**:
+
 - Start of each work session: Review existing docs
 - During development: Log key decisions and blockers
 - End of session: Update process-notes with progress
@@ -71,23 +75,29 @@ claude plugins add teresa-torres-plugins/project-docs
 ## Project Categories
 
 ### Active Projects
+
 Currently under development with regular updates.
 
 ### Completed Projects
+
 Finished projects that are deployed or delivered.
 
 ### Experiments
+
 Quick proofs-of-concept, spikes, and technical explorations.
 
 ### Learning
+
 Tutorial projects, course work, and skill development.
 
 ### Archived
+
 Deprecated, paused, or superseded projects kept for reference.
 
 ## Documentation Standards
 
 Each project should include:
+
 - `README.md` - What it is, how to use it, setup instructions
 - `ARCHITECTURE.md` - Design decisions, patterns, system overview
 - `process-notes.md` - Development history and decisions (gitignored)
@@ -111,6 +121,7 @@ Each project should include:
 ## Resources
 
 See `resources/` directory for:
+
 - Curated bookmarks and articles
 - Course materials and notes
 - Technical references
@@ -119,6 +130,7 @@ See `resources/` directory for:
 ## Tools & Scripts
 
 The `scripts/` directory contains utilities for:
+
 - Scaffolding new projects
 - Generating project summaries
 - Archiving completed work
@@ -129,10 +141,6 @@ Run `./scripts/new-project.sh --help` for usage information.
 ## Status Overview
 
 For current project status and statistics, see [PROJECTS.md](./PROJECTS.md).
-
-## License
-
-See [LICENSE](./LICENSE) for details.
 
 ---
 

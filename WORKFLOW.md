@@ -171,6 +171,7 @@ Or manually:
 - Add details in body if needed
 
 Examples:
+
 - `Add user authentication with JWT`
 - `Fix memory leak in data parser`
 - `Update README with installation instructions`
@@ -188,7 +189,9 @@ Examples:
 ### When to Use Each Command
 
 #### `/project-docs:readme`
+
 Use when:
+
 - Starting a new project
 - Adding user-facing features
 - Changing setup/installation process
@@ -196,7 +199,9 @@ Use when:
 - Adding configuration options
 
 #### `/project-docs:architecture`
+
 Use when:
+
 - Designing initial system architecture
 - Adding new infrastructure components
 - Establishing new patterns or conventions
@@ -205,7 +210,9 @@ Use when:
 - Making architectural decisions
 
 #### `/project-docs:process-notes`
+
 Use when:
+
 - End of work session
 - Context window approaching limit (~90%)
 - Completing a major feature or milestone
@@ -215,7 +222,9 @@ Use when:
 - Learning something significant
 
 #### `/project-docs:ab-test`
+
 Use when:
+
 - Planning experiments or comparisons
 - Testing multiple approaches
 - Measuring feature impact
@@ -224,7 +233,9 @@ Use when:
 ### Agent Usage
 
 #### `/project-docs:plan-review`
+
 Use before implementing complex features:
+
 - After creating implementation plan
 - Before writing significant code
 - To check consistency with ARCHITECTURE.md
@@ -235,6 +246,7 @@ Use before implementing complex features:
 ### tags.json Structure
 
 Keep `tags.json` updated with:
+
 - Project name and location
 - Current status (active, completed, archived, paused)
 - Technology tags
@@ -243,6 +255,7 @@ Keep `tags.json` updated with:
 - Related projects
 
 Update when:
+
 - Creating new project
 - Changing project status
 - Moving project directories
@@ -251,19 +264,25 @@ Update when:
 ## Tools and Scripts
 
 ### new-project.sh
+
 Creates new project with template files:
+
 ```bash
 ./scripts/new-project.sh <category> <project-name>
 ```
 
 ### archive-project.sh
+
 Moves project to completed or archived:
+
 ```bash
 ./scripts/archive-project.sh <project-name> <destination>
 ```
 
 ### update-project-list.sh
+
 Regenerates project summaries in PROJECTS.md:
+
 ```bash
 ./scripts/update-project-list.sh
 ```
