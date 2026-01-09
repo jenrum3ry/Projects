@@ -1,0 +1,34 @@
+# CODEOWNERS file
+#
+# Each line is a file pattern followed by one or more owners.
+# Owners can be @username, @org/team-name, or email addresses.
+#
+# Replace @username with your GitHub username
+
+# Global owner for all files
+* @username
+
+# Documentation files
+*.md @username
+/docs/ @username
+
+# Templates
+/templates/ @username
+
+# Configuration files
+/.github/ @username
+*.yml @username
+*.yaml @username
+*.json @username
+
+# Scripts
+/scripts/ @username
+
+# Project metadata
+PROJECTS.md @username
+tags.json @username
+WORKFLOW.md @username
+
+# Specific project directories (examples)
+# /active/specific-project/ @username @collaborator
+# /experiments/ @username

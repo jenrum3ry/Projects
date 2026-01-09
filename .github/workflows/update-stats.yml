@@ -1,0 +1,46 @@
+name: Update Project Stats
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Count projects
+      id: count
+      run: |
+        ACTIVE=$(find active -mindepth 1 -maxdepth 1 -type d | wc -l)
+        COMPLETED=$(find completed -mindepth 1 -maxdepth 1 -type d | wc -l)
+        EXPERIMENTS=$(find experiments -mindepth 1 -maxdepth 1 -type d | wc -l)
+        LEARNING=$(find learning -mindepth 1 -maxdepth 1 -type d | wc -l)
+        ARCHIVED=$(find archived -mindepth 1 -maxdepth 1 -type d | wc -l)
+        TOTAL=$((ACTIVE + COMPLETED + EXPERIMENTS + LEARNING + ARCHIVED))
+
+        echo "active=$ACTIVE" >> $GITHUB_OUTPUT
+        echo "completed=$COMPLETED" >> $GITHUB_OUTPUT
+        echo "experiments=$EXPERIMENTS" >> $GITHUB_OUTPUT
+        echo "learning=$LEARNING" >> $GITHUB_OUTPUT
+        echo "archived=$ARCHIVED" >> $GITHUB_OUTPUT
+        echo "total=$TOTAL" >> $GITHUB_OUTPUT
+
+    - name: Create stats badge
+      run: |
+        mkdir -p .github/badges
+        echo "![Active Projects](${{ steps.count.outputs.active }})" > .github/badges/active.svg
+        echo "![Total Projects](${{ steps.count.outputs.total }})" > .github/badges/total.svg
+
+    - name: Display stats
+      run: |
+        echo "📊 Project Statistics:"
+        echo "Active: ${{ steps.count.outputs.active }}"
+        echo "Completed: ${{ steps.count.outputs.completed }}"
+        echo "Experiments: ${{ steps.count.outputs.experiments }}"
+        echo "Learning: ${{ steps.count.outputs.learning }}"
+        echo "Archived: ${{ steps.count.outputs.archived }}"
+        echo "Total: ${{ steps.count.outputs.total }}"

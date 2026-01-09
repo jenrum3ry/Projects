@@ -1,0 +1,40 @@
+# Project-specific .gitignore template
+# Customize based on your project's technology stack
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Process Notes (working documentation)
+process-notes.md
+
+# Environment and Secrets
+.env
+.env.local
+*.local
+secrets.yml
+credentials.json
+
+# Dependencies (uncomment as needed)
+# node_modules/
+# venv/
+# __pycache__/
+
+# Build outputs (uncomment as needed)
+# dist/
+# build/
+# target/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+.cache/
