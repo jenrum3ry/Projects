@@ -1,3 +1,6 @@
 [submodule "project-docs"]
 	path = project-docs
 	url = https://github.com/ttorres33/project-docs.git
+[submodule "task-management"]
+	path = task-management
+	url = https://github.com/ttorres33/task-management.git
