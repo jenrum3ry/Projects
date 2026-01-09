@@ -5,6 +5,18 @@
     },
     {
       "pattern": "^https://localhost"
+    },
+    {
+      "pattern": "^https://example.com"
+    },
+    {
+      "pattern": "^http://example.com"
+    },
+    {
+      "pattern": "^https://github.com/username"
+    },
+    {
+      "pattern": "^https://github.com/\\[username\\]"
     }
   ],
   "timeout": "10s",
