@@ -40,7 +40,8 @@ Description of configuration needed:
 - API keys or credentials
 
 Example `.env` file:
-```
+
+```env
 VARIABLE_NAME=value
 API_KEY=your_api_key_here
 ```
@@ -60,7 +61,7 @@ Additional examples and use cases.
 
 ## Project Structure
 
-```
+```text
 project-name/
 ├── src/              # Source code
 ├── tests/            # Test files
@@ -92,6 +93,7 @@ project-name/
 ### Deployment
 
 Steps for deployment:
+
 1. Step one
 2. Step two
 3. Step three
@@ -109,8 +111,13 @@ Steps for deployment:
 
 Common issues and solutions:
 
-**Issue**: Description
-**Solution**: How to fix
+### Issue
+
+Description
+
+### Solution
+
+How to fix
 
 ## Contributing
 

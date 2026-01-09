@@ -81,20 +81,24 @@ When adding a new project, include:
 **Description**: Brief overview of what this project is and its purpose.
 
 **Technologies**:
+
 - List main technologies, frameworks, languages
 
 **Goals**:
+
 - Primary objectives and success criteria
 
 **Current Status**:
+
 - What's working
 - What's in progress
 - Any blockers
 
 **Links**:
-- [Repository](#)
-- [Documentation](#)
-- [Live Demo](#) _(if applicable)_
+
+- Repository: (link here)
+- Documentation: (link here)
+- Live Demo: (link here if applicable)
 
 **Related Projects**: References to related work
 
@@ -158,4 +162,5 @@ Common tags used in tags.json:
 
 ---
 
-**Note**: Run `./scripts/update-project-list.sh` to auto-generate project summaries from filesystem and tags.json.
+**Note**: Run `./scripts/update-project-list.sh` to auto-generate
+project summaries from filesystem and tags.json.

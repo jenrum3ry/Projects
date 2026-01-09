@@ -10,7 +10,7 @@ High-level description of how the system is designed and why these choices were 
 
 ### Architecture Diagram
 
-```
+```text
 [ASCII diagram or link to diagram]
 
 User → API Gateway → Application Server → Database
@@ -20,7 +20,8 @@ User → API Gateway → Application Server → Database
 
 ### Components
 
-**Component Name**
+### Component Name
+
 - Purpose: What it does
 - Technology: What it's built with
 - Responsibilities: Key functions
@@ -30,8 +31,9 @@ User → API Gateway → Application Server → Database
 
 ### Entities
 
-**Entity Name**
-```
+### Entity Name
+
+```json
 {
   "field1": "type",
   "field2": "type",
@@ -60,7 +62,8 @@ CREATE TABLE table_name (
 );
 ```
 
-**Indexes**:
+### Indexes
+
 - Index on field1 for query performance
 - Composite index on (field2, field3)
 
@@ -68,13 +71,15 @@ CREATE TABLE table_name (
 
 ### REST Endpoints
 
-**GET /api/resource**
+### GET /api/resource
+
 - Purpose: Retrieve resources
 - Parameters: `?filter=value`
 - Response: `{ "data": [...] }`
 - Authentication: Required/Not required
 
-**POST /api/resource**
+### POST /api/resource
+
 - Purpose: Create new resource
 - Request Body: `{ "field": "value" }`
 - Response: `{ "id": "123", "status": "created" }`
@@ -98,7 +103,10 @@ CREATE TABLE table_name (
 
 ### Services and Resources
 
-**Service Name** (e.g., AWS Lambda, EC2, RDS)
+### Service Name
+
+(e.g., AWS Lambda, EC2, RDS)
+
 - Purpose
 - Configuration
 - Scaling strategy
@@ -114,7 +122,10 @@ CREATE TABLE table_name (
 
 ### Key User Flows
 
-**Flow Name** (e.g., User Registration)
+### Flow Name
+
+(e.g., User Registration)
+
 1. User submits form
 2. API validates input
 3. Database creates record
@@ -123,7 +134,8 @@ CREATE TABLE table_name (
 
 ### Background Jobs
 
-**Job Name**
+### Job Name
+
 - Trigger: What initiates this job
 - Frequency: How often it runs
 - Purpose: What it accomplishes
@@ -133,7 +145,7 @@ CREATE TABLE table_name (
 
 (If applicable - for complex state transitions)
 
-```
+```text
 Initial State → Action → New State
 Pending → Process → Complete
         → Failure → Failed
@@ -143,14 +155,17 @@ Pending → Process → Complete
 
 ### Patterns Used
 
-**Pattern Name** (e.g., Repository Pattern, Factory Pattern)
+### Pattern Name
+
+(e.g., Repository Pattern, Factory Pattern)
+
 - Where: Which components use this
 - Why: Rationale for choosing this pattern
 - Implementation: How it's implemented
 
 ### Code Organization
 
-```
+```text
 src/
 ├── controllers/    # HTTP request handlers
 ├── services/       # Business logic
@@ -226,17 +241,20 @@ src/
 
 ### Testing Strategy
 
-**Unit Tests**
+### Unit Tests
+
 - What's tested
 - Coverage goals
 - Key test cases
 
-**Integration Tests**
+### Integration Tests
+
 - Component interactions tested
 - Test environment setup
 - Key scenarios
 
-**E2E Tests**
+### E2E Tests
+
 - Critical user flows tested
 - Tools used
 - Test data management
@@ -252,6 +270,7 @@ src/
 ### Third-Party Libraries
 
 List major dependencies and why they were chosen:
+
 - **Library Name** (version): Purpose and alternatives considered
 
 ## Deployment
@@ -296,7 +315,8 @@ Steps to rollback if deployment fails.
 
 ### Major Architectural Decisions
 
-**[Date] - Decision Title**
+### [Date] - Decision Title
+
 - **Context**: What was the situation
 - **Decision**: What was decided
 - **Rationale**: Why this was chosen

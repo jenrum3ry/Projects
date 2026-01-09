@@ -65,9 +65,11 @@ This document outlines my personal workflow for managing projects in this reposi
    - `learning/` - Tutorial or learning exercise
 
 2. **Create Structure**
+
    ```bash
    ./scripts/new-project.sh <category> <project-name>
    ```
+
    Or manually:
    - Create project directory
    - Copy templates from `templates/`
@@ -121,9 +123,11 @@ This document outlines my personal workflow for managing projects in this reposi
    - Tag final version
 
 3. **Move to Completed**
+
    ```bash
    ./scripts/archive-project.sh <project-name> completed
    ```
+
    Or manually:
    - Move from `active/` to `completed/`
    - Update `PROJECTS.md` status
@@ -145,6 +149,7 @@ For projects that are paused, deprecated, or no longer relevant:
 ```
 
 Or manually:
+
 - Move to `archived/` directory
 - Update `PROJECTS.md` with reason for archiving
 - Update `tags.json` status
@@ -153,30 +158,35 @@ Or manually:
 ## Naming Conventions
 
 ### Projects
+
 - Use `kebab-case-names`
 - Be descriptive but concise
 - Include tech stack if ambiguous: `python-data-analyzer`
 - Include purpose if needed: `learning-rust-basics`
 
 ### Git Branches
+
 - `feature/add-authentication`
 - `fix/memory-leak-in-parser`
 - `experiment/try-new-algorithm`
 - `docs/update-architecture`
 
 ### Git Commits
+
 - Use imperative mood: "Add feature" not "Added feature"
 - Start with verb: Add, Update, Fix, Remove, Refactor
 - Keep first line under 72 characters
 - Add details in body if needed
 
 Examples:
+
 - `Add user authentication with JWT`
 - `Fix memory leak in data parser`
 - `Update README with installation instructions`
 - `Refactor database queries for performance`
 
 ### Files
+
 - `README.md` - Project overview and usage
 - `ARCHITECTURE.md` - Design and technical details
 - `process-notes.md` - Work log (gitignored)
@@ -188,7 +198,9 @@ Examples:
 ### When to Use Each Command
 
 #### `/project-docs:readme`
+
 Use when:
+
 - Starting a new project
 - Adding user-facing features
 - Changing setup/installation process
@@ -196,7 +208,9 @@ Use when:
 - Adding configuration options
 
 #### `/project-docs:architecture`
+
 Use when:
+
 - Designing initial system architecture
 - Adding new infrastructure components
 - Establishing new patterns or conventions
@@ -205,7 +219,9 @@ Use when:
 - Making architectural decisions
 
 #### `/project-docs:process-notes`
+
 Use when:
+
 - End of work session
 - Context window approaching limit (~90%)
 - Completing a major feature or milestone
@@ -215,7 +231,9 @@ Use when:
 - Learning something significant
 
 #### `/project-docs:ab-test`
+
 Use when:
+
 - Planning experiments or comparisons
 - Testing multiple approaches
 - Measuring feature impact
@@ -224,7 +242,9 @@ Use when:
 ### Agent Usage
 
 #### `/project-docs:plan-review`
+
 Use before implementing complex features:
+
 - After creating implementation plan
 - Before writing significant code
 - To check consistency with ARCHITECTURE.md
@@ -235,6 +255,7 @@ Use before implementing complex features:
 ### tags.json Structure
 
 Keep `tags.json` updated with:
+
 - Project name and location
 - Current status (active, completed, archived, paused)
 - Technology tags
@@ -243,6 +264,7 @@ Keep `tags.json` updated with:
 - Related projects
 
 Update when:
+
 - Creating new project
 - Changing project status
 - Moving project directories
@@ -251,19 +273,25 @@ Update when:
 ## Tools and Scripts
 
 ### new-project.sh
+
 Creates new project with template files:
+
 ```bash
 ./scripts/new-project.sh <category> <project-name>
 ```
 
 ### archive-project.sh
+
 Moves project to completed or archived:
+
 ```bash
 ./scripts/archive-project.sh <project-name> <destination>
 ```
 
 ### update-project-list.sh
+
 Regenerates project summaries in PROJECTS.md:
+
 ```bash
 ./scripts/update-project-list.sh
 ```
@@ -271,30 +299,35 @@ Regenerates project summaries in PROJECTS.md:
 ## Tips and Best Practices
 
 ### Documentation
+
 - Write for your future self - you'll forget context
 - Document the "why" not just the "what"
 - Capture dead ends to avoid repeating mistakes
 - Keep docs close to code they describe
 
 ### Git Practices
+
 - Commit before trying risky changes
 - One logical change per commit
 - Write commit messages that explain why
 - Push regularly for backup
 
 ### Context Management
+
 - Save important details before they scroll away
 - Use process-notes proactively, not reactively
 - Include file paths in notes for easy navigation
 - Link related decisions together
 
 ### Project Organization
+
 - Start simple, add structure as needed
 - Prefer real organization over metadata
 - Keep related things together
 - Archive liberally - disk space is cheap
 
 ### Learning Projects
+
 - Document learnings as you go
 - Compare with previous approaches
 - Note resources and references
@@ -302,6 +335,7 @@ Regenerates project summaries in PROJECTS.md:
 
 ---
 
-**Note**: This workflow is a living document. Update it as practices evolve and new patterns emerge.
+**Note**: This workflow is a living document. Update it as practices
+evolve and new patterns emerge.
 
 **Last Updated**: 2026-01-09
