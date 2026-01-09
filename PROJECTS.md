@@ -23,7 +23,7 @@ Currently under development with regular updates.
 
 | Project | Description | Started | Tech Stack | Status | Next Steps |
 |---------|-------------|---------|------------|--------|------------|
-| Enterprise Reporting | Reporting solution | 2026-01-09 | Py/React/PG | Planning | Setup |
+| Ent Reporting | Report system | 2026-01-09 | Py/React/PG | Planning | Setup |
 
 ---
 
