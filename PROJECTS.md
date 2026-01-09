@@ -8,12 +8,12 @@ Master list of all projects with current status and metadata.
 
 ## Summary Statistics
 
-- **Active Projects**: 0
+- **Active Projects**: 1
 - **Completed Projects**: 0
 - **Experiments**: 0
 - **Learning Projects**: 0
 - **Archived Projects**: 0
-- **Total Projects**: 0
+- **Total Projects**: 1
 
 ---
 
@@ -23,7 +23,7 @@ Currently under development with regular updates.
 
 | Project | Description | Started | Tech Stack | Status | Next Steps |
 |---------|-------------|---------|------------|--------|------------|
-| _(none)_ | | | | | |
+| Enterprise Reporting | Comprehensive enterprise reporting solution with automated generation and dashboards | 2026-01-09 | Python, React, PostgreSQL | Planning | Set up project structure and initial requirements |
 
 ---
 
