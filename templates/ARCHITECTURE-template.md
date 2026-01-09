@@ -270,6 +270,7 @@ src/
 ### Third-Party Libraries
 
 List major dependencies and why they were chosen:
+
 - **Library Name** (version): Purpose and alternatives considered
 
 ## Deployment

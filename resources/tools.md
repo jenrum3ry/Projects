@@ -173,8 +173,8 @@ Curated list of development tools, utilities, and software.
   Browser debugging
 - **[Lighthouse](https://developers.google.com/web/tools/lighthouse)** -
   Performance auditing
-- **[webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)** -
-  Bundle analysis
+- **[webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)**
+  \- Bundle analysis tool
 
 ## Miscellaneous
 

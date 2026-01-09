@@ -65,9 +65,11 @@ This document outlines my personal workflow for managing projects in this reposi
    - `learning/` - Tutorial or learning exercise
 
 2. **Create Structure**
+
    ```bash
    ./scripts/new-project.sh <category> <project-name>
    ```
+
    Or manually:
    - Create project directory
    - Copy templates from `templates/`
@@ -121,9 +123,11 @@ This document outlines my personal workflow for managing projects in this reposi
    - Tag final version
 
 3. **Move to Completed**
+
    ```bash
    ./scripts/archive-project.sh <project-name> completed
    ```
+
    Or manually:
    - Move from `active/` to `completed/`
    - Update `PROJECTS.md` status
@@ -145,6 +149,7 @@ For projects that are paused, deprecated, or no longer relevant:
 ```
 
 Or manually:
+
 - Move to `archived/` directory
 - Update `PROJECTS.md` with reason for archiving
 - Update `tags.json` status
@@ -153,18 +158,21 @@ Or manually:
 ## Naming Conventions
 
 ### Projects
+
 - Use `kebab-case-names`
 - Be descriptive but concise
 - Include tech stack if ambiguous: `python-data-analyzer`
 - Include purpose if needed: `learning-rust-basics`
 
 ### Git Branches
+
 - `feature/add-authentication`
 - `fix/memory-leak-in-parser`
 - `experiment/try-new-algorithm`
 - `docs/update-architecture`
 
 ### Git Commits
+
 - Use imperative mood: "Add feature" not "Added feature"
 - Start with verb: Add, Update, Fix, Remove, Refactor
 - Keep first line under 72 characters
@@ -178,6 +186,7 @@ Examples:
 - `Refactor database queries for performance`
 
 ### Files
+
 - `README.md` - Project overview and usage
 - `ARCHITECTURE.md` - Design and technical details
 - `process-notes.md` - Work log (gitignored)
@@ -290,30 +299,35 @@ Regenerates project summaries in PROJECTS.md:
 ## Tips and Best Practices
 
 ### Documentation
+
 - Write for your future self - you'll forget context
 - Document the "why" not just the "what"
 - Capture dead ends to avoid repeating mistakes
 - Keep docs close to code they describe
 
 ### Git Practices
+
 - Commit before trying risky changes
 - One logical change per commit
 - Write commit messages that explain why
 - Push regularly for backup
 
 ### Context Management
+
 - Save important details before they scroll away
 - Use process-notes proactively, not reactively
 - Include file paths in notes for easy navigation
 - Link related decisions together
 
 ### Project Organization
+
 - Start simple, add structure as needed
 - Prefer real organization over metadata
 - Keep related things together
 - Archive liberally - disk space is cheap
 
 ### Learning Projects
+
 - Document learnings as you go
 - Compare with previous approaches
 - Note resources and references
@@ -321,6 +335,7 @@ Regenerates project summaries in PROJECTS.md:
 
 ---
 
-**Note**: This workflow is a living document. Update it as practices evolve and new patterns emerge.
+**Note**: This workflow is a living document. Update it as practices
+evolve and new patterns emerge.
 
 **Last Updated**: 2026-01-09
