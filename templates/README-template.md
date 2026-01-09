@@ -128,7 +128,7 @@ Specify license. See [LICENSE](../LICENSE) for details.
 
 ## Changelog
 
-See [CHANGELOG.md](./CHANGELOG.md) for version history (if applicable).
+(Optional) Create a CHANGELOG.md file to track version history.
 
 ## Contact
 

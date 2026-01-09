@@ -19,8 +19,16 @@
       "pattern": "^https://github.com/\\[username\\]"
     }
   ],
-  "timeout": "10s",
+  "httpHeaders": [
+    {
+      "urls": ["https://www.udemy.com", "https://leetcode.com", "https://stackoverflow.com", "https://www.reddit.com", "https://www.canva.com", "https://www.npmjs.com", "https://online.stanford.edu"],
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      }
+    }
+  ],
+  "timeout": "20s",
   "retryOn429": true,
-  "retryCount": 3,
-  "aliveStatusCodes": [200, 206]
+  "retryCount": 5,
+  "aliveStatusCodes": [200, 206, 403]
 }
