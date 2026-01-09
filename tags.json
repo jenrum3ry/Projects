@@ -2,29 +2,7 @@
   "$schema": "https://json-schema.org/draft-07/schema#",
   "version": "1.0.0",
   "lastUpdated": "2026-01-09",
-  "projects": [
-    {
-      "name": "example-web-app",
-      "displayName": "Example Web Application",
-      "path": "active/example-web-app",
-      "status": "active",
-      "description": "Example project entry showing the metadata structure",
-      "started": "2026-01-09",
-      "completed": null,
-      "archived": null,
-      "technologies": ["javascript", "react", "node.js", "postgresql"],
-      "categories": ["web", "fullstack"],
-      "type": "application",
-      "links": {
-        "repository": "https://github.com/username/example-web-app",
-        "documentation": "active/example-web-app/README.md",
-        "demo": null
-      },
-      "tags": ["frontend", "backend", "database"],
-      "relatedProjects": [],
-      "archived_reason": null
-    }
-  ],
+  "projects": [],
   "metadata": {
     "statusTypes": [
       "active",
