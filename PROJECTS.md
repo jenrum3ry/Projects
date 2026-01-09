@@ -23,7 +23,7 @@ Currently under development with regular updates.
 
 | Project | Description | Started | Tech Stack | Status | Next Steps |
 |---------|-------------|---------|------------|--------|------------|
-| Enterprise Reporting | Comprehensive enterprise reporting solution with automated generation and dashboards | 2026-01-09 | Python, React, PostgreSQL | Planning | Set up project structure and initial requirements |
+| Enterprise Reporting | Reporting solution | 2026-01-09 | Py/React/PG | Planning | Setup |
 
 ---
 
